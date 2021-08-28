@@ -1,0 +1,2 @@
+rootProject.name = "Foodemo"
+include ':app'

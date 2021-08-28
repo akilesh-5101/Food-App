@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".PayActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Payment Options"
+        android:textStyle="bold"
+        android:textSize="35sp"/>
+
+    <Button
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Pay By Card"/>
+
+    <Button
+        android:id="@+id/cash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="Pay By Cash"/>
+
+    <TextView
+        android:id="@+id/success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Payment Succesful!\n Your order is placed"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Go To Home"
+        android:background="@drawable/hori_rounded"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

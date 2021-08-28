@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="#11DFDE"
+    tools:context=".MainActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/foodgif"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view"
+        android:src="@drawable/foodcycling"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+
+    <View
+        android:id="@+id/shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded"
+        android:layout_below="@+id/view"/>
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/card_view"-->
+<!--        android:layout_below="@+id/view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        card_view:cardCornerRadius="4dp">-->
+
+        <TextView
+            android:id="@+id/foodDelivery"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="40dp"
+            android:textColor="#16268F"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Delivery"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/foodDelivery">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/pizzza"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/pizza"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:id="@+id/pizzza_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pizzza"
+            android:text="Pizza"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="65dp"
+            android:textColor="@color/teal_700"/>
+
+    <ImageButton
+        android:id="@+id/burger"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/burger"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/pizzza" />
+
+    <TextView
+        android:id="@+id/burger_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/pizzza_text"
+        android:text="Burger"
+        android:layout_below="@+id/burger"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/teal_700"/>
+
+    <ImageButton
+        android:id="@+id/pasta"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/pasta"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/burger" />
+
+    <TextView
+        android:id="@+id/pasta_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/burger_text"
+        android:text="Pasta"
+        android:layout_below="@+id/burger"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/teal_700"/>
+
+            <ImageButton
+                android:id="@+id/drinks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drinks"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/pasta" />
+
+            <TextView
+                android:id="@+id/drinks_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/pasta_text"
+                android:text="Drinks"
+                android:layout_below="@+id/drinks"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/teal_700"/>
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>
